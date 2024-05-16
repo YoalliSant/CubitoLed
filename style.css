@@ -30,7 +30,6 @@ body {
 
 .form {
     width:85%;
-    height:325px;
     background:rgb(255, 255, 255);
     margin:calc(50vh - 300px) auto;
     padding:10px 30px;
