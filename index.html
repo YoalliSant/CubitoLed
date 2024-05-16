@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Cubito LED</title>
+</head>
+<body>
+    <header class="main-header">
+        <h2><b>Cubo LED - IoT</b></h2>
+    </header>
+<br><br><br>
+
+    <div class="form_header">
+      
+        <p style="font-size:15px" type="Estado con el servidor: "></p>
+        <div id="servidor" class="mensaje"></div>
+        <p style="font-size:15px" type="Mensaje: "></p>
+        <div id="resultado" class="mensaje"></div>
+      
+        <br>
+    </div>
+    <form class="form" id="formulario" method="GET">
+
+        <br>
+        <div class="text-center">
+            <div class="row">
+                <div class="col">
+                    <div class="ledBlue"></div><h5>Patron 1</h5>
+                    <div class="d-inline-flex">
+                        <a class="button" role="button" onclick="command(0)">Encender</a><br>
+                        <div class="dropdown dropend">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                            </button>
+                            <ul class="dropdown-menu text-bg-primary">
+                                <li style="padding: 8%;">Este patrón enciende el cubo entero.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+        
+                    <div class="ledBlue"></div><h5>Patron 2</h5>
+                    <div class="d-inline-flex">
+                        <a class="button" role="button" onclick="command(1)">Encender</a><br>
+                        <div class="dropdown dropend">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                            </button>
+                            <ul class="dropdown-menu text-bg-primary">
+                                <li style="padding: 8%;">Este patrón enciende las caras del cubo sucesivamente una a una y luego las apaga.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+
+                    <div class="col">
+                    <div class="ledBlue"></div><h5>Patron 3</h5>
+                    <div class="d-inline-flex">
+                        <a class="button" role="button" onclick="command(2)">Encender</a><br>
+                        <div class="dropdown dropend">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                            </button>
+                            <ul class="dropdown-menu text-bg-primary">
+                                <li style="padding: 8%;">Este patrón enciende las caras del cubo en forma de caracol y 
+                                    luego las apaga en reversa.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+
+                    <div class="ledBlue"></div><h5>Patron 4</h5>
+                    <div class="d-inline-flex">
+                        <a class="button" role="button" onclick="command(3)">Encender</a><br>
+                        <div class="dropdown dropend">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                            </button>
+                            <ul class="dropdown-menu text-bg-primary">
+                                <li style="padding: 8%;">Este patrón forma una cruz y luego enciende las filas restantes. Este patrón se repite dos veces.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+
+                <div class="col">
+                    
+                    <div class="ledBlue"></div><h5>Patron 5</h5>
+                    <div class="d-inline-flex">
+                        <a class="button" role="button" onclick="command(4)">Encender</a><br>
+                        <div class="dropdown dropend">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                            </button>
+                            <ul class="dropdown-menu text-bg-primary">
+                                <li style="padding: 8%;">Este patrón enciende los dos niveles exteriores y luego los dos niveles interiores. El patrón 
+                                    se repite tres veces.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+        
+                    <div class="ledBlue"></div><h5>Patron 6</h5>
+                    <div class="d-inline-flex">
+                        <a class="button" role="button" onclick="command(5)">Encender</a><br>
+                        <div class="dropdown dropend">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                            </button>
+                            <ul class="dropdown-menu text-bg-primary">
+                                <li style="padding: 8%;">Este patrón </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+
+                <div class="col">
+                    
+                    <div class="ledBlue"></div><h5>Patron 7</h5>
+                    <div class="d-inline-flex">
+                        <a class="button" role="button" onclick="command(6)">Encender</a><br>
+                        <div class="dropdown dropend">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                            </button>
+                            <ul class="dropdown-menu text-bg-primary">
+                                <li style="padding: 8%;">Este patrón enciende los dos niveles exteriores y luego los dos niveles interiores. El patrón 
+                                    se repite tres veces.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+        
+                    <div class="ledBlue"></div><h5>Patron 8</h5>
+                    <div class="d-inline-flex">
+                        <a class="button" role="button" onclick="command(7)">Encender</a><br>
+                        <div class="dropdown dropend">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                            </button>
+                            <ul class="dropdown-menu text-bg-primary">
+                                <li style="padding: 8%;">Este patrón </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+        
+            </div>
+        </div>
+        
+        </form>
+
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js"></script>
+
+    <script src="main.js"></script>   
+</body>
+</html>

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    margin:0;  
+    background-color: #748CDB;
+    font-family: "Raleway", sans-serif;
+    }
+
+    .main-header {
+        background: #192D45;
+        color: #fff;
+        height: 10%;
+        width: 100%;
+        top: 0px;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+      }
+
+.form_header{
+    background-color: #163B88;
+    border-radius: 8px;
+    color: #fff;
+    padding:10px 30px;
+    width:540px;
+    margin:calc(50vh - 300px) auto;
+}
+
+.form {
+    width:85%;
+    height:325px;
+    background:rgb(255, 255, 255);
+    margin:calc(50vh - 300px) auto;
+    padding:10px 30px;
+    border-radius: 8px;
+}
+
+h5 {
+    color: #192D45;
+    font-size: 17px;
+}
+
+input {
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    transition:all .3s;
+    border-bottom:2px solid #000000; 
+    font-size: 13px; 
+    color: rgb(0, 0, 0);
+}
+
+input:focus {
+    border-bottom:2px solid #000000;
+}
+
+p {
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size: 15px;
+}
+
+p:before {
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:18px;
+}
+
+button {
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+}
+
+.button {
+    background-color: #EA25B5;
+    color: #fff;
+    padding: 0.25em 1.5em;
+    width: 75%;
+    border-radius: .2em;
+}
+
+.button:focus,
+.button:hover {
+  background-color: #FF82F4;
+}
+
+span {
+    margin:0 5px 0 15px;
+}
+
+
+a:link, 
+a:visited {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        width: 350px;
+        display: inline-block; 
+        display: block; 
+        margin-right: auto; 
+        margin-left: auto;
+      }
+
+button:hover {
+    background:#78788c; 
+    color:white;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block; 
+    display: block; 
+    margin-right: auto; 
+    margin-left: auto;
+    width: 100px;
+}
+
+.ledBlue{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    box-shadow: 0 2px 8px rgb(0, 0, 0, .4),
+    0 2px 1px rgb(0, 0, 0, .08);
+
+    background: rgb(0, 103, 175);
+    background: linear-gradient(0deg, rgba(255, 243, 255, 1) 0%),
+    rgba(0, 103, 175, 1) 100%;
+}
+
+.ledBlue::after{
+    display: block;
+    content: "";
+    width: 18px;
+    height: 10px;
+    border-radius: 100%;
+    margin: 4px auto;
+    background: #fff;
+    background: linear-gradient(0deg, rgba(255, 255, 255, .2) 0%,
+    rgba(255, 255, 255, .8) 100%);
+}
+
+.ledBlue.on{
+    background: radial-gradient(circle, 
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(5, 145, 245, 0.942) 100%);
+    box-shadow: 0 2px 8px rgb(0, 0, 0, .4),
+    0 2px 1px rgb(0, 0, 0, .08),
+    0 0 30px rgb(10, 4, 197),
+    0 0 5px rgb(255, 255, 255, 1);
+}
+
+
+
+
